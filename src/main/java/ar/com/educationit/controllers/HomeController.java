@@ -13,7 +13,7 @@ public class HomeController {
 		return "home";
 	}
 	
-	public void delete() {
-		
+	public String alert() {
+		return "";
 	}
 }
