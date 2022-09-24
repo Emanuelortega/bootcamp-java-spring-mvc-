@@ -1,0 +1,26 @@
+[33mcommit 1d6f23194625d921018bad14417e4c59c051c2ba[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 5fe1648 32c33da
+Author: Emanuelortega <101907755+Emanuelortega@users.noreply.github.com>
+Date:   Sat Sep 24 00:05:40 2022 -0300
+
+    Merge pull request #1 from Emanuelortega/feature/clase71-spring-mvc
+    
+    clase71: create pull request from command line
+
+[33mcommit 32c33da62e2c7b749f0bb0e9fbfb20917c405371[m[33m ([m[1;31morigin/feature/clase71-spring-mvc[m[33m, [m[1;32mfeature/clase71-spring-mvc[m[33m)[m
+Author: Emanuelortega <matias_ortega1996@outlook.com>
+Date:   Fri Sep 23 23:57:47 2022 -0300
+
+    clase71: create pull request from command line
+
+[33mcommit 5fe16482e318e249fa6e365e77166b352c79709f[m
+Author: Emanuelortega <matias_ortega1996@outlook.com>
+Date:   Fri Sep 23 21:04:19 2022 -0300
+
+    add first controller
+
+[33mcommit 73c8ce7c4d5e8eeea571a52ee2b4d5bf213e0f06[m
+Author: Emanuelortega <matias_ortega1996@outlook.com>
+Date:   Fri Sep 23 20:29:18 2022 -0300
+
+    commit inicial
