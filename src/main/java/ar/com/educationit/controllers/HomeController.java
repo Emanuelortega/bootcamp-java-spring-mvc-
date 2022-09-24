@@ -16,4 +16,8 @@ public class HomeController {
 	public String alert() {
 		return "bla";
 	}
+	
+	public void metodo2() {
+		
+	}
 }
