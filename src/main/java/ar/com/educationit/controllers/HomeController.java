@@ -20,4 +20,9 @@ public class HomeController {
 	public void metodo2() {
 		
 	}
+	
+	public void metodo3() {
+		
+	}
+	
 }
