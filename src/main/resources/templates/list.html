@@ -1,0 +1,38 @@
+<!--listar los cupones del sitio-->
+<!--namespaces-->
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:th=http://www.thymeleaft.org>
+
+<head>
+	<!--incluir el css-->
+	<link rel="stylesheet" 
+	type="text/css" media="all" 
+	th:href="@{/css/site.css}" />
+</head>
+
+
+<body>
+
+<h1>hello</h1>
+
+<table>
+	<!--titulos de la tabla-->
+	<tr>
+		<th>
+		col
+		</th>
+	</tr>
+	<!--rows-->
+	<tr th:each="cupon : ${list}">
+		<td th:text="${cupon}">
+			vacio
+		</td>
+	</tr>
+
+
+</table>
+<hr>
+
+</body>
+
+</html>
