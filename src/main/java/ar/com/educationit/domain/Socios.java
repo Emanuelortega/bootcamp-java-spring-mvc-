@@ -6,7 +6,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 
+import ar.com.educationit.validators.MiValidador;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -34,11 +36,17 @@ public class Socios {
 	
 	//pk compuesta(vem9os mas adelante)
 	
-	@Column(nullable = false, length =50, name= "apellido")
+	@Column(nullable = false, length =50, name= "apellido")//jpa+hibernate
+	@NotEmpty
+	//@MiValidador(value = "100")
 	private String apellido;
+	
 	@Column(nullable = false, length =60, name= "nombre")
+	@NotEmpty
 	private String nombre;
+	
 	@Column(nullable = false, length =6, unique=true)
+	@NotEmpty
 	private String codigo;
 	
 	public Long getId() {
