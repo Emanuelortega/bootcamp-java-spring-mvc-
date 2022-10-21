@@ -1,5 +1,7 @@
 package ar.com.educationit.domain;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -32,11 +34,11 @@ public class Cupon{
 	@NotNull
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Column(name = "fecha_vigencia_desde",nullable = false)//no acepta nulos
-	private String fechaVigenciaDesde;
+	private Date fechaVigenciaDesde;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	@Column(name = "fecha_vigencia_hasta",nullable = true)//no acepta nulos
-	private String fechaVigenciaHasta;
+	@Column(name = "fecha_vigencia_hasta",nullable = true)// acepta nulos
+	private Date fechaVigenciaHasta;
 	
 	@NotNull
 	@Min(value = 1)
@@ -68,19 +70,19 @@ public class Cupon{
 		this.codigo = codigo;
 	}
 
-	public String getFechaVigenciaDesde() {
+	public Date getFechaVigenciaDesde() {
 		return fechaVigenciaDesde;
 	}
 
-	public void setFechaVigenciaDesde(String fechaVigenciaDesde) {
+	public void setFechaVigenciaDesde(Date fechaVigenciaDesde) {
 		this.fechaVigenciaDesde = fechaVigenciaDesde;
 	}
 
-	public String getFechaVigenciaHasta() {
+	public Date getFechaVigenciaHasta() {
 		return fechaVigenciaHasta;
 	}
 
-	public void setFechaVigenciaHasta(String fechaVigenciaHasta) {
+	public void setFechaVigenciaHasta(Date fechaVigenciaHasta) {
 		this.fechaVigenciaHasta = fechaVigenciaHasta;
 	}
 

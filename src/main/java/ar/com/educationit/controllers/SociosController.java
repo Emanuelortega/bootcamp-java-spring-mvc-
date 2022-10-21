@@ -21,51 +21,63 @@ import ar.com.educationit.services.SociosService;
 @Controller
 @RequestMapping("/socio")
 public class SociosController {
-	
+
 	//D.I
 	@Autowired
 	private SociosService sociosService;
 	
 	//http://localhost:8081/socio/all
 	@GetMapping("/all")
-	public String all(Model model ){
+	public String all(Model model) {
+//		if(true) throw new DuplicateKeyException("error",new Exception("probando cosas"));
+
 		List<Socios> socios = this.sociosService.buscarTodos();
-		model.addAttribute("socios",socios);
-		return "socios";
+		model.addAttribute("socios", socios);
+		return "/socio/socios";
 	}
 	
-	@GetMapping("/delete")
+	@GetMapping("/delete") 
 	public String delete(
-			@RequestParam(name = "idSocio", required = true) Long idSocios) {
+			@RequestParam(name="idSocio",required = true ) Long idSocios
+			) {
+		
 		this.sociosService.eliminar(idSocios);
+		
 		return "redirect:/socio/all";
 	}
 	
-	@GetMapping("/edit/{id}")
+	@GetMapping("/edit/{id}") 
 	public String preEdit(
-			@PathVariable(name = "id", required = true) Long id, Model model) {
+			@PathVariable(name="id",required = true ) Long id,
+			Model model
+			) {
+		
 		Socios socios = this.sociosService.buscarSocio(id);
-		model.addAttribute("socio", socios);
+		
+		model.addAttribute("SOCIO",socios);
+		
 		return "edit";
 	}
-	@PostMapping("edit")
+	
+	@PostMapping("/edit")
 	public String editar(
-		
-			@Valid @ModelAttribute(name="socio") Socios socio,
+			@Valid @ModelAttribute(name="SOCIO") Socios socio,
 			BindingResult result,
-			Model modelAndView
-			) {
-		//ModelAndView modelAndView = new ModelAndView("edit");
+			Model modelAndView) {
 		
 		//evaluar las validaciones
+		
+		//ModelAndView modelAndView  = new ModelAndView("edit");
+		
 		if(result.hasErrors()) {
-			modelAndView.addAttribute("socio", socio);
+			modelAndView.addAttribute("SOCIO", socio);
 			return "edit";
 		}
 		
 		
+		//modelAndView.addObject("SOCIO", socio);
 		
-		//modelAndView.addObject("socios",socio);
+		//return modelAndView;
 		return "edit";
 	}
 }

@@ -11,18 +11,17 @@ import ar.com.educationit.repository.CuponRepository;
 
 @Service
 public class CuponService {
-	
+
 	//D.I
 	@Autowired
 	private CuponRepository repository;
-	
-	public List<Cupon> buscarTodos(){
+
+	public List<Cupon> buscarTodos() {
 		return this.repository.findAll();
 	}
 
 	public void eliminar(Long id) {
-		this.repository.deleteById(id);
-		
+		this.repository.deleteById(id);		
 	}
 
 	public Cupon buscar(Long id) {
@@ -32,5 +31,9 @@ public class CuponService {
 		}else {
 			return null;
 		}
+	}
+	
+	public Cupon crear(Cupon cupon) {
+		return this.repository.save(cupon);
 	}
 }
