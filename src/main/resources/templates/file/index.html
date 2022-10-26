@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" 
+	xmlns="http://www.w3.org/1999/xhtml" 
+	xmlsn:th="http://www.thymeleaft.org">
+	
+	<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	</head>
+	<body>
+		<div th:classappend="${class}" class="alert" role="alert" th:if="${msj}" >
+			<strong th:text=${msj}>></strong>
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+		<header>
+			<h1>Registro de archivos
+		</header>
+		
+		<div class="container">
+		<!--form-->
+		<form 
+			enctype="multipart/form-data"
+			th:action="@{/file}"
+			method="post">
+			
+			 <label for="formFile" class="form-label">Ingrese un archivo</label>
+			<input class="form-control" type="file" id="formFile" name="file" required>
+			<button type="submit" class="btn btn-primary" style="margin-top:5px " >Enviar</button>
+		</form>	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+</html>

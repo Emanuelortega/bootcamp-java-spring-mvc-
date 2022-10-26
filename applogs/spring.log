@@ -1,0 +1,51 @@
+2022-10-22 12:01:40.702  INFO 4364 --- [restartedMain] ar.com.educationit.SpringMvcApplication  : Starting SpringMvcApplication using Java 11.0.14 on DESKTOP-2OON86J with PID 4364 (C:\desarrollo\spring-mvc\spring-mvc\target\classes started by Matias in C:\desarrollo\spring-mvc\spring-mvc)
+2022-10-22 12:01:40.702  INFO 4364 --- [restartedMain] ar.com.educationit.SpringMvcApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-10-22 12:01:40.833  INFO 4364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-22 12:01:40.843  INFO 4364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2022-10-22 12:01:40.904  INFO 4364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-22 12:01:40.905  INFO 4364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-22 12:01:40.905  INFO 4364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-22 12:01:40.919  INFO 4364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-22 12:01:40.919  INFO 4364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 215 ms
+2022-10-22 12:01:40.942  INFO 4364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-22 12:01:40.946  INFO 4364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-10-22 12:01:40.958  INFO 4364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-10-22 12:01:40.958  INFO 4364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-22 12:01:40.985  INFO 4364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-22 12:01:40.985  INFO 4364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-22 12:01:41.112  INFO 4364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-22 12:01:41.120  INFO 4364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-22 12:01:41.122  INFO 4364 --- [restartedMain] ar.com.educationit.SpringMvcApplication  : Started SpringMvcApplication in 0.454 seconds (JVM running for 246.933)
+2022-10-22 12:01:41.124  INFO 4364 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-22 12:02:03.227  INFO 4364 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-22 12:02:03.272  INFO 4364 --- [RMI TCP Connection(12)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-22 12:02:03.279  INFO 4364 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-22 12:02:03.279  INFO 4364 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-10-22 12:02:03.282  INFO 4364 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-10-22 12:02:04.931  INFO 11660 --- [restartedMain] ar.com.educationit.SpringMvcApplication  : Starting SpringMvcApplication using Java 11.0.14 on DESKTOP-2OON86J with PID 11660 (C:\desarrollo\spring-mvc\spring-mvc\target\classes started by Matias in C:\desarrollo\spring-mvc\spring-mvc)
+2022-10-22 12:02:04.932  INFO 11660 --- [restartedMain] ar.com.educationit.SpringMvcApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-10-22 12:02:04.965  INFO 11660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-22 12:02:04.965  INFO 11660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-22 12:02:05.395  INFO 11660 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-22 12:02:05.433  INFO 11660 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2022-10-22 12:02:05.843  INFO 11660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-22 12:02:05.851  INFO 11660 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-22 12:02:05.851  INFO 11660 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-22 12:02:05.902  INFO 11660 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-22 12:02:05.903  INFO 11660 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 938 ms
+2022-10-22 12:02:05.993  INFO 11660 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-22 12:02:06.027  INFO 11660 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-22 12:02:06.140  INFO 11660 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-22 12:02:06.213  INFO 11660 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-22 12:02:06.430  INFO 11660 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-22 12:02:06.453  INFO 11660 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-22 12:02:06.900  INFO 11660 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-22 12:02:06.907  INFO 11660 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-22 12:02:07.380  INFO 11660 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-22 12:02:07.406  INFO 11660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-22 12:02:07.413  INFO 11660 --- [restartedMain] ar.com.educationit.SpringMvcApplication  : Started SpringMvcApplication in 2.762 seconds (JVM running for 3.312)
+2022-10-22 12:02:32.336  INFO 11660 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-22 12:02:32.395  INFO 11660 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-22 12:02:32.405  INFO 11660 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-22 12:02:32.408  INFO 11660 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-22 12:02:32.412  INFO 11660 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
